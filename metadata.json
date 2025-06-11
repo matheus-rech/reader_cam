@@ -1,0 +1,8 @@
+{
+  "name": "Camera Text Reader",
+  "description": "An application that uses your camera or screen sharing to identify text in real-time and reads it aloud using the Gemini API.",
+  "requestFramePermissions": [
+    "camera",
+    "display-capture"
+  ]
+}
