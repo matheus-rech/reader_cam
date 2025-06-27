@@ -15,7 +15,7 @@ function nodeToJson(node: Node): any {
         children: elem.children.map(child => nodeToJson(child))
       };
     case 'text':
-      return (node as DataNode).data;
+      return { type: 'text', data: (node as DataNode).data };
     default:
       return { type: node.type };
   }
