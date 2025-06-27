@@ -24,7 +24,7 @@ function nodeToJson(node: Node): any {
 async function main() {
   let html = '';
   if (process.argv[2]) {
-    html = fs.readFileSync(process.argv[2], 'utf8');
+    html = await fs.readFile(process.argv[2], 'utf8');
   } else {
     html = await new Promise<string>((resolve, reject) => {
       let data = '';
