@@ -19,7 +19,7 @@ Use the `htmlToJson` script to quickly convert an HTML file to a JSON representa
 
 ```bash
 # Read HTML from a file
-node --loader ts-node/esm scripts/htmlToJson.ts path/to/file.html > output.json
+npm run html-to-json -- path/to/file.html > output.json
 
 # Or pipe HTML directly
 cat index.html | npm run html-to-json > output.json
