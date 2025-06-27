@@ -22,5 +22,5 @@ Use the `htmlToJson` script to quickly convert an HTML file to a JSON representa
 node --loader ts-node/esm scripts/htmlToJson.ts path/to/file.html > output.json
 
 # Or pipe HTML directly
-cat index.html | node --loader ts-node/esm scripts/htmlToJson.ts > output.json
+cat index.html | npm run html-to-json > output.json
 ```
